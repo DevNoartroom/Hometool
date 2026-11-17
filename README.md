@@ -3,7 +3,7 @@
 **Der kleine Haushaltsplaner für Zuhause, die WG oder das Büro.**
 Wer putzt diese Woche das Bad? Was muss eingekauft werden? Läuft die Milch bald ab? Hometool behält es für dich im Blick, direkt im Browser, ohne Anmeldung und ohne Werbung.
 
-### 👉 [App öffnen](https://DevNoartroom/.github.io/hometool/)
+### 👉 [App öffnen](https://DevNoartroom.github.io/hometool/)
 
 <p>
   <img src="docs/screenshot-heute.png" alt="Startseite mit den Aufgaben für heute" width="250">
@@ -27,7 +27,7 @@ Wer putzt diese Woche das Bad? Was muss eingekauft werden? Läuft die Milch bald
 
 ## In 1 Minute startklar
 
-1. **[App öffnen](https://DevNoartroom/.github.io/hometool/)**.
+1. **[App öffnen](https://DevNoartroom.github.io/hometool/)**.
 2. **Auf den Home-Bildschirm legen**, dann öffnet sie sich wie eine normale App:
    - **iPhone (Safari):** Teilen-Symbol ⬆️ → **Zum Home-Bildschirm**
    - **Android (Chrome):** Menü **⋮** → **Zum Startbildschirm hinzufügen**
