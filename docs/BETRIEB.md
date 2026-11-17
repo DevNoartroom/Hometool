@@ -98,7 +98,11 @@ git push                              # lädt ihn hoch
   "food":   [{ "id": "f…", "n": "Milch", "q": "1 l", "exp": "2026-11-20", "o": "Kühlschrank", "b": "2026-11-17" }],
   "notes":  [{ "id": "n…", "t": "Vermieter kommt Do 10 Uhr", "a": "Alex", "d": "2026-11-17T09:12", "c": "#d4efe3", "pin": 1 }],
   "people": ["Alex", "Sam"],
-  "done":   { "t…|2026-11-17": 1 }
+  "done":   { "t…|2026-11-17": 1 },
+  "earn":   { "t…|2026-11-17": { "w": "Alex", "d": "2026-11-17", "p": 10 } },
+  "buys":   [{ "id": "b…", "k": "t", "i": "kloburste", "n": "Goldene Klobürste", "c": 100, "w": "Alex", "d": "2026-11-17" }],
+  "rewards":[{ "id": "r…", "n": "Pizza bestellen", "c": 300 }],
+  "cons":   [{ "id": "c…", "n": "Milch", "q": "1 l", "o": "Kühlschrank", "d": "2026-11-17", "t": "v" }]
 }
 ```
 
@@ -110,6 +114,13 @@ git push                              # lädt ihn hoch
 | `food[].o` | `Kühlschrank`, `Gefrierfach` oder `Vorratsschrank`; `b` = Kaufdatum |
 | `notes[].c` | Farbe: `#d4efe3`, `#9ddbd2`, `#75c2b9` oder `#7d9c9c` |
 | `done` | Schlüssel `Aufgaben-ID\|Datum` (bzw. `\|-` bei „jederzeit“), Teilschritte `…\|Datum\|Nummer` |
+
+| `earn` | Verdiente Punkte je erledigter Aufgabe: `w` = wer, `d` = Datum, `p` = Punkte (10). Wird im Gegensatz zu `done` nie aufgeräumt |
+| `buys` | Eingelöstes: `k` = `t` (Trophäe, `i` = Trophäen-ID) oder `r` (eigene Belohnung), `c` = Preis |
+| `rewards` | Eigene Belohnungen mit Preis `c` in Punkten |
+| `cons` | Verbrauchsliste: `t` = `v` (verbraucht), `w` (weggeworfen) oder `k` (gekauft), `d` = Datum, `q` = Menge als Text. Die Liste addiert Mengen, die mit einer Zahl beginnen und dieselbe Einheit haben |
+
+Kontostand einer Person = Summe `earn.p` minus Summe `buys.c` (jeweils mit `w` = Name). Die Trophäen stehen im Code in `TR`, die Punkte pro Aufgabe in `PT`.
 
 Datumsangaben im Format `JJJJ-MM-TT`. Beim Import werden Einträge mit gleicher `id` ersetzt, alle Felder geprüft und Unbekanntes verworfen.
 

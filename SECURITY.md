@@ -43,7 +43,7 @@ Hometool ist eine **einzelne HTML-Datei ohne Server**. Daraus ergibt sich:
 ## Bekannte Grenzen – bitte beachten
 
 1. **Die Daten sind nicht verschlüsselt.** Wer Zugriff auf dein entsperrtes Gerät oder deinen Browser hat, kann sie lesen.
-2. **Keine sensiblen Daten speichern.** Keine PINs, Passwörter, Konto- oder Kartennummern in Aufgaben, Notizen oder Vorrat eintragen. „Bank checken“ ist als Erinnerung gedacht, nicht als Ablage für Bankdaten.
+2. **Keine sensiblen Daten speichern.** Keine PINs, Passwörter, Konto- oder Kartennummern in Aufgaben, Notizen oder Vorräte eintragen. „Bank checken“ ist als Erinnerung gedacht, nicht als Ablage für Bankdaten.
 3. **Gleiche Domain, gleicher Speicher.** Der Browser-Speicher gilt pro Domain. Unter GitHub Pages teilen sich *alle* Projekte unter `DEINNAME.github.io` dieselbe Domain. Ein anderes Projekt dort könnte die Hometool-Daten technisch auslesen. Wer das ausschließen will, nutzt eine eigene (Sub-)Domain für Hometool oder hostet dort keine fremden Skripte.
 4. **Exporte sind Klartext.** JSON- und `.ics`-Dateien enthalten alle Einträge lesbar. Verschicke sie nur an Personen, denen du die Inhalte zeigen willst.
 5. **Nur vertrauenswürdige Dateien importieren.** Der Import ist abgesichert, übernimmt aber Inhalte (Aufgaben, Notizen) in deine Liste. Importiere nur Dateien von Personen, die du kennst.
